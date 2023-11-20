@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/193deeb460.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/color-favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Master Dots Game</title>
+</head>
+<body>
+    <!-- CABECERA HTML -->
+    <header>
+        <figure>
+            <img src="img/color-logo.png" alt="logo-img">
+            <figcaption>Logo Image</figcaption>
+        </figure>
+    </header>
+
+    <!-- FORMULARIO HTML -->
+    <main>
+        <section>
+            <p id="error"></p>
+        </section>
+        <form action="#">
+            <section class="form-item">
+                <label for="nick">Nombre de Usuario:</label>
+                <input type="text" name="nick" value="#" id="nickh" readonly>
+                <input type="text" name="nick" id="nick" placeholder="NickName" required minlength="2">
+            </section>
+            <section class="form-item">
+                <label for="email">Correo Electrónico:</label>
+                <input type="text" name="email" value="@" id="emaila" readonly>
+                <input type="email" name="email" id="email" placeholder="yo@iam.es" required minlength="2">
+            </section>
+            <section class="form-item">
+                <label for="game-size">Tamaño del Juego:</label>
+                <select name="gema-size" id="game-size">
+                    <option value="">Elija una opción</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+            </section>
+            <section class="itemform">
+                <section id="avatar">
+                    <label for="avatar">Avatar:</label>
+                    <section id="avatarContainer">
+                        <img src="./img/avatar1.png" alt="" id="avatarImg">
+                    </section>
+                </section>
+                <section id="avatargrid">
+                    <figure class="avatarItem">
+                        <img src="./img/avatar1.png" class="avatarImgItem" alt="" draggable="true">
+                        <figcaption>Avatar 1</figcaption>
+                    </figure>
+                    <figure class="avatarItem">
+                        <img src="./img/avatar2.png" class="avatarImgItem" alt="" draggable="true">
+                        <figcaption>Avatar 2</figcaption>
+                    </figure>
+                    <figure class="avatarItem">
+                        <img src="./img/avatar3.png" class="avatarImgItem" alt="" draggable="true">
+                        <figcaption>Avatar 3</figcaption>
+                    </figure>
+                    <figure class="avatarItem">
+                        <img src="./img/avatar4.png" class="avatarImgItem" alt="" draggable="true">
+                        <figcaption>Avatar 4</figcaption>
+                    </figure>
+                    <figure class="avatarItem">
+                        <img src="./img/avatar5.png" class="avatarImgItem" alt="" draggable="true">
+                        <figcaption>Avatar 5</figcaption>
+                    </figure>
+                    <figure class="avatarItem">
+                        <img src="./img/avatar6.png" class="avatarImgItem" alt="" draggable="true">
+                        <figcaption>Avatar 6</figcaption>
+                    </figure>
+                </section>
+            </section>
+            <div class="itemform">
+                <p>* Obligatorio</p>
+            </div>
+            <section class="form-item">
+                <input type="submit" value="Iniciar juego">
+            </section>
+        </form>
+    </main>
+
+    <!-- PIE DE PÁGINA HTML -->
+    <footer>
+        <p>Curso Mastermind HTML CSS JS</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
