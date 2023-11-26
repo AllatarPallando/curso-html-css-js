@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- CABECERA HTML -->
-    <header>
+    <header id="header">
         <figure>
             <img src="img/color-logo.png" alt="logo-img">
             <figcaption>Logo Image</figcaption>
@@ -22,76 +22,77 @@
 
     <!-- FORMULARIO HTML -->
     <main>
-        <section>
-            <p id="error"></p>
-        </section>
-        <form action="#">
+        <form action="game.html" id="form">
+            <section>
+                <p id="error1" class="error"></p>
+            </section>
             <section class="form-item">
-                <label for="nick">Nombre de Usuario:</label>
+                <label for="nick">Nombre de Usuario<span class="mandatory">*</span></label>
                 <input type="text" name="nick" value="#" id="nickh" readonly>
-                <input type="text" name="nick" id="nick" placeholder="NickName" required minlength="2">
+                <input type="text" name="nick" id="nick" placeholder="NickName" required minlength="4">
             </section>
             <section class="form-item">
-                <label for="email">Correo Electrónico:</label>
+                <label for="email">Correo Electrónico</label>
                 <input type="text" name="email" value="@" id="emaila" readonly>
-                <input type="email" name="email" id="email" placeholder="yo@iam.es" required minlength="2">
+                <input type="email" name="email" id="email" placeholder="yo@iam.es" minlength="2">
             </section>
             <section class="form-item">
-                <label for="game-size">Tamaño del Juego:</label>
-                <select name="gema-size" id="game-size">
-                    <option value="">Elija una opción</option>
+                <label for="game-size">Tamaño del Juego<span class="mandatory">*</span></label>
+                <select name="game-size" id="game-size">
+                    <option value="0">Elija una opción</option>
                     <option value="1">4x4</option>
                     <option value="2">5x5</option>
                     <option value="3">6x6</option>
                 </select>
             </section>
-            <section class="itemform">
+            <section class="form-item">
                 <section id="avatar">
-                    <label for="avatar">Avatar:</label>
-                    <section id="avatarContainer">
+                    <label for="avatar">Avatar<span class="mandatory">*</span></label>
+                    <section id="avatar-container">
                         <img src="./img/avatar1.png" alt="" id="avatarImg">
                     </section>
                 </section>
-                <section id="avatargrid">
-                    <figure class="avatarItem">
-                        <img src="./img/avatar1.png" class="avatarImgItem" alt="" draggable="true">
+                <section id="avatar-grid">
+                    <figure class="avatar-item">
+                        <img src="./img/avatar1.png" class="avatar-img-item" alt="" draggable="true">
                         <figcaption>Avatar 1</figcaption>
                     </figure>
-                    <figure class="avatarItem">
-                        <img src="./img/avatar2.png" class="avatarImgItem" alt="" draggable="true">
+                    <figure class="avatar-item">
+                        <img src="./img/avatar2.png" class="avatar-img-item" alt="" draggable="true">
                         <figcaption>Avatar 2</figcaption>
                     </figure>
-                    <figure class="avatarItem">
-                        <img src="./img/avatar3.png" class="avatarImgItem" alt="" draggable="true">
+                    <figure class="avatar-item">
+                        <img src="./img/avatar3.png" class="avatar-img-item" alt="" draggable="true">
                         <figcaption>Avatar 3</figcaption>
                     </figure>
-                    <figure class="avatarItem">
-                        <img src="./img/avatar4.png" class="avatarImgItem" alt="" draggable="true">
+                    <figure class="avatar-item">
+                        <img src="./img/avatar4.png" class="avatar-img-item" alt="" draggable="true">
                         <figcaption>Avatar 4</figcaption>
                     </figure>
-                    <figure class="avatarItem">
-                        <img src="./img/avatar5.png" class="avatarImgItem" alt="" draggable="true">
+                    <figure class="avatar-item">
+                        <img src="./img/avatar5.png" class="avatar-img-item" alt="" draggable="true">
                         <figcaption>Avatar 5</figcaption>
                     </figure>
-                    <figure class="avatarItem">
-                        <img src="./img/avatar6.png" class="avatarImgItem" alt="" draggable="true">
+                    <figure class="avatar-item">
+                        <img src="./img/avatar6.png" class="avatar-img-item" alt="" draggable="true">
                         <figcaption>Avatar 6</figcaption>
                     </figure>
                 </section>
             </section>
-            <div class="itemform">
-                <p>* Obligatorio</p>
-            </div>
+            <section>
+                <p id="error2" class="error"></p>
+            </section>
             <section class="form-item">
-                <input type="submit" value="Iniciar juego">
+                <input type="submit" value="Iniciar juego" id="submit">
             </section>
         </form>
     </main>
 
     <!-- PIE DE PÁGINA HTML -->
-    <footer>
+    <footer id="footer">
         <p>Curso Mastermind HTML CSS JS</p>
     </footer>
+    <script src="js/user-data.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
